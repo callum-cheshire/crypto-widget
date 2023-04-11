@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "7c766dbd-8680-4e1b-ab10-2c70cb70f850",
+		"name": "CoinPaprika",
+		"description": "# Get Coin Tickers by ID\n\nUse the **Get Coin Ticker** request to retrieve current market prices for both Bitcoin and Ethereum; show the values in GBP and USD.\n\nBitcoin ID: btc-bitcoin\nEthereum ID: etc-ethereum",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Coin Ticker",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.coinpaprika.com/v1/tickers/eth-ethereum?quotes=GBP,USD",
+					"protocol": "https",
+					"host": [
+						"api",
+						"coinpaprika",
+						"com"
+					],
+					"path": [
+						"v1",
+						"tickers",
+						"eth-ethereum"
+					],
+					"query": [
+						{
+							"key": "quotes",
+							"value": "GBP,USD",
+							"description": "accepts GBP and USD"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET Bitcoin Ticker",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.coinpaprika.com/v1/tickers/btc-bitcoin?quotes=GBP,USD",
+							"protocol": "https",
+							"host": [
+								"api",
+								"coinpaprika",
+								"com"
+							],
+							"path": [
+								"v1",
+								"tickers",
+								"btc-bitcoin"
+							],
+							"query": [
+								{
+									"key": "quotes",
+									"value": "GBP,USD",
+									"description": "Accetps USD and GBP"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "GET Ethereum Ticker",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.coinpaprika.com/v1/tickers/eth-ethereum?quotes=GBP,USD",
+							"protocol": "https",
+							"host": [
+								"api",
+								"coinpaprika",
+								"com"
+							],
+							"path": [
+								"v1",
+								"tickers",
+								"eth-ethereum"
+							],
+							"query": [
+								{
+									"key": "quotes",
+									"value": "GBP,USD",
+									"description": "Accetps USD and GBP"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}

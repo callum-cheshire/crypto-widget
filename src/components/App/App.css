@@ -1,0 +1,12 @@
+.App {
+  width: 30vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+}

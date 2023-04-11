@@ -1,0 +1,23 @@
+:root {
+    --selector-color: #329ab7;
+}
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("../../assets/down-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1rem;
+    padding-right: 2.5rem;
+    width: 100%;
+    padding: 1rem;
+    padding-left: 2rem;
+    border: 2px solid var(--selector-color);
+    border-radius: 30px;
+    font-size: 1rem;
+    font-family: inherit;
+    color: var(--selector-color);
+    background-color: transparent;
+  }
